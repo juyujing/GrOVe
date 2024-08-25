@@ -7,6 +7,7 @@ git clone https://github.com/juyujing/GrOVe.git &&
 cd GrOVe &&
 conda env create --file environment.yaml &&
 conda activate grove && 
+pip install six==1.15.0 tensorflow-cpu==2.5.1 tensorflow-estimator==2.5.0 typing-extensions=3.7.4.3 wrapt==1.12.1 &&
 # Install GraphGallery
 wget https://github.com/EdisonLeeeee/GraphGallery/archive/refs/tags/1.0.0.tar.gz && 
 tar -zxvf 1.0.0.tar.gz && 
