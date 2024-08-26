@@ -1,5 +1,5 @@
 # Synopsis
-Some repair for GrOVe
+Some repair for [GrOVe](https://github.com/ssg-research/GrOVe).
 
 ## Environment Setup
 ```
