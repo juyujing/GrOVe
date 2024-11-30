@@ -69,9 +69,5 @@ python analyze_results.py <input_dir>
 
 The input_dir should be the same as the output_dir used in the training script. This generates the tables and plots used in the paper.
 
-## 📚 License
-This work is licensed under a Creative Commons Attribution 4.0 International License (CC BY 4.0).
-For commercial purposes, please contact [yj2012@hw.ac.uk] to obtain explicit permission.
-
 ## 📫 Contact
 For any inquiries or collaboration opportunities, feel free to reach out to me at [yj2012@hw.ac.uk](yj2012@hw.ac.uk).
