@@ -1,5 +1,5 @@
 # Synopsis
-Some repair for [GrOVe](https://github.com/ssg-research/GrOVe).
+Some repair for GrOVe.
 
 ## Environment Setup
 ```
@@ -25,13 +25,13 @@ Find code ```num_data = len(dataset)``` in the file. If your DGL version is 0.7.
 Then use code ```num_data = len(dataset.nodes())``` to replace it.
 
 
-## Run Model Stealing Attack
+## Run Model
 ```
 cd GrOVw/model_stealing
 python main.py target_model=gat independent_model=gat dataset=dblp surrogate_model=gat attack.recovery_from=embedding attack.robustness=simple_extraction experiment_id=0 surrogate_id=0 attack.structure=original
 ```
 
-Model Stealing Hyperparameters:
+Model Hyperparameters:
 ```
 dataset:                   ['dblp', 'pubmed', 'citeseer_full', 'coauthor_phy', 'acm', 'amazon_photo']           # Datasets used to train the surrogate model
 target_model:              ['gat', 'gin', 'sage']                                                               # Target model's architecuture
@@ -47,8 +47,6 @@ delete_edges:              ["yes", "no"]                                        
 ```
 
 All the default parameters can be inspected in the ```conf/``` directory. The file ```conf/config.yaml``` contains the default model architectures, the attack hyperparameters and the dataset.
-
-The wrapper script ```model_stealing/run_attack.py``` can be used to train the target, independent, and surrogate models used in the paper using the same random seeds. 
 
 ### Output Structure
 Each models' outputs will be saved in a directory with the following naming convention: ```./model_stealing/embeddings_overlap_{attack.overlap}_{attack.recovery_from}_{attack.structure}_{attack.robustness}```
