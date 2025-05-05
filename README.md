@@ -48,11 +48,6 @@ delete_edges:              ["yes", "no"]                                        
 
 All the default parameters can be inspected in the ```conf/``` directory. The file ```conf/config.yaml``` contains the default model architectures, the attack hyperparameters and the dataset.
 
-### Output Structure
-Each models' outputs will be saved in a directory with the following naming convention: ```./model_stealing/embeddings_overlap_{attack.overlap}_{attack.recovery_from}_{attack.structure}_{attack.robustness}```
-
-Within each directory for an experimentthe output for each model will be saved in a subdirectory with the following naming convention: ```target_{target_model}_independent_{independent_model}_{dataset}_256_surrogate_{surrogate_model}_{surrogate_id}_{experiment_id}/```
-
 ## Train Similarity Model for GrOVe.
 ```
 python train_similarity_model.py <output_dir>
@@ -68,4 +63,4 @@ python analyze_results.py <input_dir>
 The input_dir should be the same as the output_dir used in the training script. This generates the tables and plots used in the paper.
 
 ## 📫 Contact
-For any inquiries or collaboration opportunities, feel free to reach out to me at [yj2012@hw.ac.uk](yj2012@hw.ac.uk).
+For any inquiries or collaboration opportunities, feel free to reach out to me at [yujingju@ufl.edu](yujingju@ufl.edu).
